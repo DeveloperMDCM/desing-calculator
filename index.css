@@ -1,0 +1,94 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 250px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(194, 196, 200) 10%, rgb(229, 228, 227) 30%, rgb(232, 231, 230) 60%);
+    border-radius: 40px;
+    border-left: 1px solid rgb(230, 230, 230);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.item {
+    position: relative;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgb(233, 232, 224);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
+    border: 1px solid rgb(129, 127, 122);
+    color: rgb(34, 58, 125);
+    font-family: Dosis, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.display {
+    top: 10px;
+    width: 200px;
+    height: 80px;
+    background-color: rgb(234, 246, 253);
+    position: relative;
+    border-radius: 20px;
+    border-image: linear-gradient(to left, rgb(208, 208, 211), rgb(221, 226, 229)) 1 20% / 1 / 0 stretch;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(162, 184, 199);
+}
+
+.display::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 70px;
+    border: 8px solid rgb(211, 211, 213);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.item:hover {
+    transform: scale(0.97);
+	cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 4px;
+}
+
+.red {
+    color: rgb(207, 53, 68);
+}
+
+.blue {
+    color: rgb(82, 136, 205);
+}
+
+.green {
+    color: rgb(50, 158, 116);
+}
